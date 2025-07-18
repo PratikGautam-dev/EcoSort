@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Brain, Sparkles } from 'lucide-react';
-import ObjectDetector from '@/components/ObjectDetector';
+import CombinedDetectClassify from '@/components/CombinedDetectClassify';
 import { useToast } from '@/hooks/use-toast';
 // import { useAuth } from '@/hooks/useAuth';
 
@@ -76,12 +76,12 @@ const Index = () => {
       </div>
       {/* Main Content */}
       <div className="container mx-auto px-4 pb-12">
-        <ObjectDetector />
+        <CombinedDetectClassify />
       </div>
       {/* Footer Note */}
       <div className="text-center py-8 border-t border-border bg-muted/30">
         <p className="text-sm text-muted-foreground">
-          🤖 Powered by TensorFlow.js coco-ssd model for real object detection.
+          🤖 Powered by Replicate CLIP model for zero-shot classification.
         </p>
       </div>
     </div>

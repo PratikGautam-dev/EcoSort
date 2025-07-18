@@ -4,7 +4,7 @@ import '@tensorflow/tfjs';
 
 const ObjectDetector: React.FC = () => {
   const [imageURL, setImageURL] = useState<string | null>(null);
-  const [results, setResults] = useState<any[]>([]);
+  const [results, setResults] = useState<cocoSsd.DetectedObject[]>([]);
   const [loading, setLoading] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
 
